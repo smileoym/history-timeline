@@ -1,0 +1,13 @@
+https://ybogdanov.github.io/history-timeline/
+
+new_data = {people: []}
+
+j = 0
+ for (i = 0; i <  data.people.length; i++) {
+ 	if (data.people[i].to < 529) {
+ 		new_data.people[j++] = data.people[i]
+ 	}
+ }
+
+// превращаем объект в джейсон
+JSON.stringify(new_data)
